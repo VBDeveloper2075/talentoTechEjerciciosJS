@@ -1,0 +1,40 @@
+h1 {
+  color: rgb(11, 206, 24);
+  font-size: 50px;
+}
+
+.parrafo{
+  color: rgb(144, 11, 206);
+  background-color: rgb(246, 206, 212);
+  font-size: 20px;
+}
+
+main{
+  color: rgb(206, 11, 11);
+  background-color: rgb(206, 246, 212);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #333;
+  margin-right: 2px;
+}
+
+nav ul li a:hover {
+  background-color: #111;
+}
