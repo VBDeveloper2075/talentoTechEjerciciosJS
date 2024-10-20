@@ -38,3 +38,79 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #111;
 }
+ /*CSS del formulario de contacto*/
+/* colocar clases y id para que no pise los estilos de los otros html */
+
+
+
+/* Estilos generales de 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+*/
+
+/* Estilos del formulario 
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}*/
+
+/* Estilos adicionales para una mejor experiencia de usuario 
+h1 {
+  text-align: center;
+  color: #007BFF;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+}
+*/
