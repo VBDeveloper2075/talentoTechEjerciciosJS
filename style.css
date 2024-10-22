@@ -97,3 +97,33 @@ nav ul li a:hover {
 .contact-container form button:hover {
   background-color: #0056b3;
 }
+
+nav {
+  background-color: #f8f8f8;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  padding: 10px 20px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+
+nav li:hover {
+  background-color: #d0d0d0;
+}
