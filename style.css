@@ -131,3 +131,9 @@ nav ul li a:hover {
   background-color: #111;
   color: #fff;
 }
+
+holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
