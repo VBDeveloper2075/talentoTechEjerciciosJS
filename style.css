@@ -99,8 +99,9 @@ nav ul li a:hover {
 }
 
 nav {
-  background-color: #f8f8f8;
-  padding: 10px;
+  background-color: #e0e0e0;
+  padding: 10px 0;
+  width: 100%;
 }
 
 nav ul {
@@ -111,19 +112,22 @@ nav ul {
   justify-content: space-around;
 }
 
-nav li {
-  padding: 10px 20px;
-  background-color: #e0e0e0;
-  border-radius: 5px;
-  text-align: center;
+nav ul li {
+  display: inline-block;
 }
 
-nav li a {
+nav ul li a {
   text-decoration: none;
   color: #000;
   display: block;
+  padding: 10px 20px;
+  background-color: #af53cf;
+  border-radius: 5px;
+  text-align: center;
+  margin-right: 2px;
 }
 
-nav li:hover {
-  background-color: #d0d0d0;
+nav ul li a:hover {
+  background-color: #111;
+  color: #fff;
 }
