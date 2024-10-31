@@ -243,6 +243,151 @@ nav ul li a:hover {
   width: 100%;
 }
 
+/* CARDS DE RESENIAS */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+header h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+header .nove {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  background-color: #444;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Contenedor principal */
+.holder {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.historia {
+  margin-bottom: 40px;
+}
+
+.historia h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.historia p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Estilos para las cards */
+.staff .personas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.persona {
+  background-color: #fff;
+  width: 32%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.persona img {
+  width: 100%;
+  display: block;
+}
+
+.persona h5 {
+  font-size: 20px;
+  margin: 15px;
+  color: #333;
+}
+
+.persona h6 {
+  font-size: 16px;
+  margin: 0 15px 10px 15px;
+  color: #777;
+}
+
+.persona p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  margin: 0 15px 15px 15px;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 992px) {
+  .persona {
+    width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .persona {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  header h1, header .nove {
+    font-size: 22px;
+  }
+}
+
+
 contact-container form button:hover {
   background-color: #0056b3;
 }
