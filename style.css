@@ -121,3 +121,150 @@ holder {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+/* h1 {
+  color: rgb(11, 206, 24);
+  font-size: 50px;
+}
+
+.parrafo {
+  color: rgb(144, 11, 206);
+  background-color: rgb(246, 206, 212);
+  font-size: 20px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background-color: rgb(206, 246, 212);
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1 1 calc(25% - 40px); /* Ajusta el ancho de las tarjetas */
+  box-sizing: border-box;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.card p {
+  color: #666;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  flex: 1;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #d3d3d3; /* Fondo gris */
+  margin-right: 2px;
+  border-radius: 3px; /* Bordes redondeados */
+}
+
+nav ul li a:hover {
+  background-color: #111;
+}
+
+/* Estilos para la página de contacto */
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-container form .form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.contact-container form .form-group input,
+.contact-container form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contact-container form .form-group textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.contact-container form button {
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+contact-container form button:hover {
+  background-color: #0056b3;
+}
+
+nav button {
+  background-color: #d3d3d3; /* Fondo gris */
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno */
+  margin: 5px; /* Espaciado externo */
+  border: none; /* Sin borde */
+  border-radius: 3px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+  width: 100%;
+}
+
+nav button:hover {
+  background-color: #45a049; /* Color de fondo al pasar el cursor */
+}
+
+holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} */
