@@ -3,13 +3,13 @@ h1 {
   font-size: 50px;
 }
 
-.parrafo{
+.parrafo {
   color: rgb(144, 11, 206);
   background-color: rgb(246, 206, 212);
   font-size: 20px;
 }
 
-main{
+main {
   color: rgb(206, 11, 11);
   background-color: rgb(206, 246, 212);
 }
@@ -94,42 +94,23 @@ nav ul li a:hover {
   font-size: 16px;
 }
 
-.contact-container form button:hover {
+contact-container form button:hover {
   background-color: #0056b3;
 }
 
-nav {
-  background-color: #e0e0e0;
-  padding: 10px 0;
-  width: 100%;
+nav button {
+  background-color: #4CAF50; /* Color de fondo */
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno */
+  margin: 5px; /* Espaciado externo */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-}
-
-nav ul li {
-  display: inline-block;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #000;
-  display: block;
-  padding: 10px 20px;
-  background-color: #af53cf;
-  border-radius: 5px;
-  text-align: center;
-  margin-right: 2px;
-}
-
-nav ul li a:hover {
-  background-color: #111;
-  color: #fff;
+nav button:hover {
+  background-color: #45a049; /* Color de fondo al pasar el cursor */
 }
 
 holder {
