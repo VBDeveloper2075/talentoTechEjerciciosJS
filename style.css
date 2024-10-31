@@ -37,7 +37,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #111;
+  background-color: #4CAF50;
 }
 
 /* Estilos para la página de contacto */
@@ -113,7 +113,7 @@ nav button {
 }
 
 nav button:hover {
-  background-color: #45a049; /* Color de fondo al pasar el cursor */
+  background-color: #99ed9e; /* Color de fondo al pasar el cursor */
 }
 
 holder {
