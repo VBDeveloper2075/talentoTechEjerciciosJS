@@ -93,6 +93,7 @@ nav ul li a:hover {
 	font-size: 1.5rem;
 	color: #fff;
 	text-transform: capitalize;
+  text-align: center;
 	position: relative;
 }
 
@@ -110,6 +111,7 @@ nav ul li a:hover {
 .card-category span {
 	font-size: 1rem;
 	color: #fff;
+  padding: 1rem;
 	cursor: pointer;
 }
 
@@ -384,11 +386,6 @@ nav ul li a:hover {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.persona img {
-  width: 20%;
-  display: block;
 }
 
 .persona h5 {
