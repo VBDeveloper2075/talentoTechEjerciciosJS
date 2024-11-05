@@ -1,6 +1,10 @@
+body{
+  background-color: #4caf50;
+}
+
 h1 {
   color: rgb(11, 206, 24);
-  font-size: 50;
+  font-size: 100;
 }
 
 .parrafo {
@@ -124,11 +128,11 @@ nav ul li a:hover {
 
 footer {
   width: 100%;
+  background-color: #5ec863;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #f8f9fa;
   padding: 1rem 0;
   border-top: 1px solid #e9ecef;
 }
