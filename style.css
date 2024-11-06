@@ -2,11 +2,6 @@ body{
   background-color: #4caf50;
 }
 
-h1 {
-  color: rgb(11, 206, 24);
-  font-size: 200;
-}
-
 .parrafo {
   color: rgb(144, 11, 206);
   background-color: rgb(246, 206, 212);
@@ -103,7 +98,6 @@ footer {
   background: #0cebeb;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  ;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,7 +134,7 @@ footer #iconos a:hover {
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(246, 242, 242, 0.1);
 }
 
 .contact-container h2 {
@@ -347,7 +341,7 @@ header {
 
 /* Encabezado */
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -373,16 +367,12 @@ h1 {
       border: none;
       cursor: pointer;
   }
-
-  /* Aquí puedes agregar estilos para ocultar el menú 
-     y mostrarlo al hacer clic en el botón */
 }
 
 nav {
-  background: #0cebeb;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  ;
+  background: #0cebeb;  
+  background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
+  background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
 }
 
 nav ul {
