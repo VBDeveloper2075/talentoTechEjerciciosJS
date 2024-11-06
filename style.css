@@ -17,7 +17,6 @@ main {
   background: #A1FFCE;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 nav ul {
@@ -324,16 +323,23 @@ background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, F
 }
 
 header {
+  position: relative;
+  width: 100%;
   background-color: #53ac90;
   color: #fff;
   padding: 1rem 0;
+}
+
+#hamburguer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
 }
 
 .container-headr {
   max-width: 960px;
   margin: 0 auto;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
 }
 
