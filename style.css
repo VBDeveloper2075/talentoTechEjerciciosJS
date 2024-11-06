@@ -395,7 +395,17 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #4df458;
+  background-color: #53ac90;
+  transition: box-shadow 0.3s ease;
+        }
+
+        a:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        a.shadow {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
 }
 
 /* Contenedor principal */
