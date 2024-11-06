@@ -315,7 +315,7 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: #53ac90;
   color: #fff;
   padding: 1rem 0;
 }
@@ -331,11 +331,13 @@ header {
 /* Logo */
 .logoHeaderSvg {
   fill: #fff; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Encabezado */
 h1 {
-  font-size: 1.5rem;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Botón de menú hamburguesa */
@@ -365,7 +367,7 @@ h1 {
 }
 
 nav {
-  background-color: #333;
+  background-color: #4df458;
 }
 
 nav ul {
@@ -383,12 +385,12 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   padding: 8px 15px;
-  background-color: #444;
+  background-color: #53ac90;
   border-radius: 5px;
 }
 
 nav ul li a:hover {
-  background-color: #555;
+  background-color: #4df458;
 }
 
 /* Contenedor principal */
@@ -474,6 +476,7 @@ nav button {
   cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
   transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
   width: 100%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 nav button:hover {
