@@ -15,7 +15,10 @@ h1 {
 
 main {
   color: rgb(19, 151, 158);
-  background-color: rgb(206, 246, 212);
+  background: #0cebeb;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ;
 }
 
 nav ul {
@@ -99,7 +102,10 @@ nav ul li a:hover {
 
 footer {
   width: 100%;
-  background-color: #4df458;
+  background: #0cebeb;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -305,7 +311,7 @@ nav ul li a:hover {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 /* Estilos generales */
@@ -368,7 +374,10 @@ h1 {
 }
 
 nav {
-  background-color: #4df458;
+  background: #0cebeb;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ;
 }
 
 nav ul {
@@ -398,7 +407,7 @@ nav ul li a:hover {
 .holder {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .historia {
@@ -468,8 +477,7 @@ contact-container form button:hover {
 }
 
 nav button {
-  background-color: #d3d3d3; /* Fondo gris */
-  color: white; /* Color del texto */
+  color: white;
   padding: 10px 20px; /* Espaciado interno */
   margin: 5px; /* Espaciado externo */
   border: none; /* Sin borde */
@@ -493,6 +501,7 @@ holder {
 section {
   font-family: initial;
 }
+
 section .container-categories {
   margin: 2px;
 }
@@ -501,9 +510,9 @@ main h1 {
   text-align: center;
 }
 
-main p {
+/* main p {
   margin: 20px;
-}
+} */
 
 main h2 {
   margin: 20px;
