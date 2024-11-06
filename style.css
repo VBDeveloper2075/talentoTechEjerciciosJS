@@ -235,7 +235,7 @@ nav button:hover {
   background-color: #99ed9e; /* Color de fondo al pasar el cursor */
 }
 
-holder {
+.holder {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -319,7 +319,7 @@ nav ul li a:hover {
 
 .contact-container form button {
   padding: 10px 15px;
-  background-color: #007bff;
+  background-color: #4caf50;
   color: #fff;
   border: none;
   border-radius: 4px;
