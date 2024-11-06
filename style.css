@@ -314,17 +314,54 @@ body {
   background-color: #f5f5f5;
 }
 
-header h1 {
-  text-align: center;
-  margin-top: 20px;
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
 }
 
-header .nove {
+.container-headr {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logoHeaderSvg {
+  fill: #fff; 
+}
+
+/* Encabezado */
+h1 {
+  font-size: 1.5rem;
+}
+
+/* Botón de menú hamburguesa */
+.menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none; /* Ocultar en pantallas grandes */
+}
+
+.bar {
   display: block;
-  text-align: center;
-  font-size: 24px;
-  color: #555;
-  margin-bottom: 20px;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+/* Estilos para pantallas pequeñas (media queries) */
+@media (max-width: 768px) {
+  .menu-btn {
+      display: block;
+  }
+
+  /* Aquí puedes agregar estilos para ocultar el menú 
+     y mostrarlo al hacer clic en el botón */
 }
 
 nav {
@@ -440,7 +477,7 @@ nav button {
 }
 
 nav button:hover {
-  background-color: #45a049; /* Color de fondo al pasar el cursor */
+  background-color: #0ff91b; /* Color de fondo al pasar el cursor */
 }
 
 holder {
