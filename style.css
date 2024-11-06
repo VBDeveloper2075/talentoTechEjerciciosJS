@@ -125,7 +125,6 @@ footer #iconos {
 }
 
 footer #iconos a {
-  color: #333;
   font-size: 1.5rem;
   transition: color 0.3s;
 }
@@ -262,7 +261,7 @@ background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, F
 .contact-container h2 {
   text-align: center;
   margin-bottom: 20px;
-  color: #333;
+  color: #666;
 }
 
 .contact-container form {
@@ -323,17 +322,13 @@ background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, F
 }
 
 header {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   background-color: #53ac90;
   color: #fff;
-  padding: 1rem 0;
-}
-
-#hamburguer {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center; 
+  padding: 0 20px;
 }
 
 .container-headr {
@@ -353,7 +348,7 @@ header {
 /* Encabezado */
 h1 {
   font-size: 3rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Botón de menú hamburguesa */
@@ -361,7 +356,6 @@ h1 {
   background: none;
   border: none;
   cursor: pointer;
-  display: none; /* Ocultar en pantallas grandes */
 }
 
 .bar {
@@ -376,6 +370,8 @@ h1 {
 @media (max-width: 768px) {
   .menu-btn {
       display: block;
+      border: none;
+      cursor: pointer;
   }
 
   /* Aquí puedes agregar estilos para ocultar el menú 
@@ -425,6 +421,7 @@ nav ul li a:hover {
 
 .historia h2 {
   font-size: 28px;
+  color: #878585;
   margin-bottom: 15px;
 }
 
@@ -458,13 +455,13 @@ nav ul li a:hover {
 .persona h5 {
   font-size: 20px;
   margin: 15px;
-  color: #333;
+  color: #666;
 }
 
 .persona h6 {
   font-size: 16px;
   margin: 0 15px 10px 15px;
-  color: #777;
+  color: #666;
 }
 
 .persona p {
@@ -490,7 +487,7 @@ nav button {
   cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
   transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
   width: 100%;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 nav button:hover {
@@ -517,8 +514,10 @@ main h1 {
 
 main p {
   margin: 20px;
+  color: #666
 }
 
 main h2 {
   margin: 20px;
+  color: #666
 }
