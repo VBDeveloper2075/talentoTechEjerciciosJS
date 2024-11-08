@@ -397,22 +397,21 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #53ac90;
   transition: box-shadow 0.3s ease;
-        }
+}
 
-        a:hover {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
+a:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-        a.shadow {
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-        }
+a.shadow {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 /* Contenedor principal */
 .holder {
   max-width: 1200px;
   margin: 0 auto;
-  /* padding: 20px; */
+  padding: 20px;
 }
 
 .historia {
