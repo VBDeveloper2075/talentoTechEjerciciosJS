@@ -360,7 +360,7 @@ h1 {
   margin: 5px 0;
 }
 
-/* Estilos para pantallas pequeñas (media queries) */
+/* Estilos para tablets (media queries) */
 @media (max-width: 768px) {
   .menu-btn {
       display: block;
