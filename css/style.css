@@ -515,7 +515,7 @@ a.shadow {
   margin: 0 15px 15px 15px;
 }
 
-/* Media Queries para responsividad */
+/* Media Queries ... luego pasa a 3 cards x linea*/
 @media (max-width: 992px) {
   .persona {
     width: 48%;
