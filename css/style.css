@@ -5,9 +5,18 @@
 }
 
 body {
-  background: #A1FFCE;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #a1ffce; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #faffd1,
+    #a1ffce
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #faffd1,
+    #a1ffce
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
 }
 
 nav ul {
@@ -91,9 +100,19 @@ nav ul li a:hover {
 
 footer {
   width: 100%;
-  background: #0cebeb;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0cebeb; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #29ffc6,
+    #20e3b2,
+    #0cebeb
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #29ffc6,
+    #20e3b2,
+    #0cebeb
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -241,9 +260,17 @@ nav ul li a:hover {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background: #A1FFCE;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #a1ffce; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #faffd1,
+    #a1ffce
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #faffd1,
+    #a1ffce
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -306,9 +333,17 @@ background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, F
 /* Estilos generales */
 body {
   font-family: Arial, sans-serif;
-  background: #A1FFCE;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #a1ffce; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #faffd1,
+    #a1ffce
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #faffd1,
+    #a1ffce
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 header {
@@ -318,12 +353,13 @@ header {
   width: 100%;
   background-color: #53ac90;
   color: #fff;
-  padding: 20px 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .container-headr {
-  max-width: 960px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin-left: 50px;
   display: flex;
   align-items: center;
 }
@@ -343,6 +379,7 @@ h1 {
 
 /* Botón de menú hamburguesa */
 .menu-btn {
+  margin-right: 50px;
   background: none;
   border: none;
   cursor: pointer;
@@ -362,27 +399,23 @@ h1 {
     width: auto;
   }
 
-  header {
-    padding: 10px;
-  }
-
   h1 {
     font-size: 1.5rem;
   }
-  
 }
 
 /* Estilos para tablets (media queries) */
 @media (max-width: 768px) {
   .menu-btn {
-      display: block;
-      border: none;
-      cursor: pointer;
+    display: block;
+    border: none;
+    cursor: pointer;
   }
 }
 
 nav {
-  background: #0cebeb;  
+  width: 100%;
+  background: #0cebeb;
   background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
   background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
 }
@@ -412,11 +445,11 @@ nav ul li a:hover {
 }
 
 a:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 a.shadow {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 /* Contenedor principal */
@@ -491,7 +524,6 @@ a.shadow {
 
 nav button {
   color: white;
-  padding: 10px 20px; /* Espaciado interno */
   margin: 5px; /* Espaciado externo */
   border: none; /* Sin borde */
   border-radius: 3px; /* Bordes redondeados */
@@ -525,10 +557,10 @@ main h1 {
 
 main p {
   margin: 20px;
-  color: #666
+  color: #666;
 }
 
 main h2 {
   margin: 20px;
-  color: #666
+  color: #666;
 }
