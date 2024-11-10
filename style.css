@@ -356,6 +356,22 @@ h1 {
   margin: 5px 0;
 }
 
+/* Estilos para dispositivos móviles */
+@media (max-width: 480px) {
+  .contact-container form button {
+    width: auto;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+}
+
 /* Estilos para tablets (media queries) */
 @media (max-width: 768px) {
   .menu-btn {
