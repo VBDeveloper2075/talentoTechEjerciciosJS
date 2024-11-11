@@ -565,7 +565,12 @@ main h2 {
   color: #666;
 }
 
-.shopping-cart{
-  margin-right: 10px;
+.shopping-cart {
+  position: relative;
+}
+
+.shop-cart {
+   
+  
   
 }
