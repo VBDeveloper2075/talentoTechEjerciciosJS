@@ -352,7 +352,8 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
   align-items: center;
   width: 100%;
   background-color: #53ac90;
@@ -519,7 +520,7 @@ a.shadow {
   margin: 0 15px 15px 15px;
 }
 
-/* Media Queries ... luego pasa a 3 cards x linea*/
+/* Media Queries ... luego pasa a 2 cards x linea*/
 @media (max-width: 992px) {
   .persona {
     width: 48%;
@@ -579,4 +580,9 @@ main h2 {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+h3{
+  margin: 20px;
+  padding: 20px;
 }
