@@ -1,9 +1,3 @@
-.parrafo {
-  color: rgb(144, 11, 206);
-  background-color: rgb(246, 206, 212);
-  font-size: 20px;
-}
-
 body {
   background: #a1ffce; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -65,16 +59,17 @@ nav ul li a:hover {
 .category-blogs,
 .category-descripciones,
 .category-redaccion {
-  background-image: linear-gradient(#79978c80, #7e797980),
+  background-image: linear-gradient(#e0ede880, #cbf4c680),
     url("assets/book-4109187_640.png");
   background-size: cover;
+  color: #fff;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .card-category p {
   font-size: 1.5rem;
-  color: #fff;
+  color: rgb(19, 151, 158);
   text-transform: capitalize;
   text-align: center;
   position: relative;
