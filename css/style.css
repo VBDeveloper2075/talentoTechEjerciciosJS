@@ -529,6 +529,11 @@ main h2 {
 
 .shopping-cart {
   position: relative;
+  }
+
+  /* para que la imagen del carrito sea blanca y no negra */
+.shopping-cart img {    
+    filter: invert(1);
 }
 
 .ifr {
