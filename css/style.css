@@ -126,16 +126,20 @@ footer p {
   padding: 0 1rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  color: #fff;
+  text-align: center;
 }
 
 footer #iconos {
   display: flex;
   gap: 1rem;
+  margin-top: 1rem;
 }
 
 footer #iconos a {
   font-size: 1.5rem;
   transition: color 0.4s;
+  color: #fff;
 }
 
 footer #iconos a:hover {
