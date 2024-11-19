@@ -1,4 +1,13 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box; 
   background: #a1ffce; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -10,7 +19,7 @@ body {
     #faffd1,
     #a1ffce
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  width: 100%;
+  width: auto;
 }
 
 nav ul {
@@ -256,6 +265,7 @@ nav ul li a:hover {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
+  text-align: center;
   background: linear-gradient(
     to right,
     #faffd1,
