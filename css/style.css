@@ -352,7 +352,7 @@ body {
 
 header {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
@@ -360,6 +360,7 @@ header {
   color: #fff;
   padding-top: 30px;
   padding-bottom: 30px;
+  justify-content: space-between;
 }
 
 .container-headr {
@@ -405,7 +406,7 @@ h1 {
   }
 
   h1 {
-    font-size: 1.5rem;
+    display: none;
   }
 }
 
@@ -582,7 +583,5 @@ main h2 {
   text-align: center;
 }
 
-h3{
-  margin: 20px;
-  padding: 20px;
-}
+
+/* Estilos para la página de contacto */
