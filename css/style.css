@@ -560,7 +560,7 @@ main h2 {
   nav, h1 {
     display: none;
   }
-  .menu-btn {
+  .dropdown {
     display: block;
   }
 }
@@ -570,7 +570,7 @@ main h2 {
   nav, h1 {
     display: block;
   }
-  .menu-btn {
+  .dropdown {
     display: none;
   }
 }
