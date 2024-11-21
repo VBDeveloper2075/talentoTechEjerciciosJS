@@ -1,6 +1,5 @@
 *, *::before, *::after {
   box-sizing: inherit;
-}
 
 body {
   margin: 0;
@@ -372,7 +371,7 @@ h1 {
 
 /* Estilos para tablets (media queries) */
 @media (max-width: 768px) {
-  .menu-btn {
+  .dropdown {
     display: block;
     border: none;
     cursor: pointer;
@@ -562,6 +561,8 @@ main h2 {
   }
   .dropdown {
     display: block;
+    position: absolute;
+    right: 0;
   }
 }
 
