@@ -202,7 +202,8 @@ footer #iconos a:hover {
   cursor: pointer;
   font-size: 16px;
   width: 100%;
-  button:rgb(19, 151, 158);
+  /* Replace 'button' with a valid CSS property */
+  color: rgb(19, 151, 158);
 }
 
 
@@ -574,4 +575,5 @@ main h2 {
   .dropdown {
     display: none;
   }
+}
 }
