@@ -48,37 +48,39 @@
     <div class="contact-container">
       <h2>Formulario de Contacto</h2>
       <form action="#" method="post">
-        <div>
+        <div class="form-group">
           <label for="nombre">Nombre:</label>
           <input type="text" id="nombre" name="nombre" required>
         </div>
-
-        <div>
+    
+        <div class="form-group">
           <label for="apellido">Apellido:</label>
           <input type="text" id="apellido" name="apellido" required>
         </div>
-
-        <div>
+    
+        <div class="form-group">
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required>
         </div>
-
-        <div>
+    
+        <div class="form-group">
           <label for="ciudad">Ciudad:</label>
-          <input type="ciudad" id="ciudad" name="ciudad" required>
+          <input type="text" id="ciudad" name="ciudad" required>
         </div>
-
-        <div>
-          <label for="pais">Pais:</label>
+    
+        <div class="form-group">
+          <label for="pais">País:</label>
           <input type="text" id="pais" name="pais" required>
         </div>
-
-        <div>
+    
+        <div class="form-group">
           <label for="comentarios">Aquí tus comentarios:</label>
-          <textarea id="comentarios" name="comentarios"  required></textarea>
+          <textarea id="comentarios" name="comentarios" rows="4" required></textarea>
         </div>
-
-        <button type="submit">Enviar</button>
+    
+        <div class="form-group">
+          <button type="submit">Enviar</button>
+        </div>
       </form>
     </div>
   </main>

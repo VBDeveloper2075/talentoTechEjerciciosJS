@@ -97,7 +97,7 @@
   }
 
   .card-category span:hover {
-    color: #358139;
+    color: #0cebeb;
   }
 
   /* Estilos footer */
@@ -147,7 +147,7 @@
   }
 
   footer #iconos a:hover {
-    color: #4caf50;
+    color: #0cebeb;
   }
 
   /* Estilos para la página de contacto */
@@ -166,51 +166,51 @@
     color: rgb(19, 151, 158);
   }
 
-  .contact-container form {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .contact-container form .form-group {
+  .form-group {
     margin-bottom: 15px;
   }
-
-  .contact-container form .form-group label {
+  
+  .form-group label {
+    display: block;
     margin-bottom: 5px;
     font-weight: bold;
     color: #555;
   }
-
-  .contact-container form .form-group input,
-  .contact-container form .form-group textarea {
+  
+  .form-group input,
+  .form-group textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 16px;
-    margin: 10px;
+    box-sizing: border-box;
   }
-
-  .contact-container textarea {
-    resize: vertical;
-    height: 90%;
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: rgb(19, 151, 158);
+    outline: none;
   }
-
-  .contact-container button {
-    padding: 10px 15px;
+  
+  .form-group button {
+    width: 100%;
+    padding: 10px;
     background-color: rgb(19, 151, 158);
-    color: #fff;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
+    color: white;
     font-size: 16px;
-    width: 100%;
-    /* Replace 'button' with a valid CSS property */
-    color: rgb(19, 151, 158);
+    cursor: pointer;
+  }
+  
+  .form-group button:hover {
+    background-color: #0cebeb;
   }
 
+ 
+
   nav button {
-    background-color: #4caf50; /* Color de fondo */
+    background-color: #0cebeb; /* Color de fondo */
     color: white; /* Color del texto */
     padding: 10px 20px; /* Espaciado interno */
     margin: 5px; /* Espaciado externo */
@@ -222,7 +222,7 @@
   }
 
   nav button:hover {
-    background-color: #99ed9e; /* Color de fondo al pasar el cursor */
+    background-color: #81c586; /* Color de fondo al pasar el cursor */
   }
 
   .holder {
@@ -232,7 +232,7 @@
   }
 
   .card p {
-    color: #666;
+    color: #0cebeb;
   }
 
   nav ul {
@@ -295,7 +295,7 @@
   .contact-container form label {
     margin-bottom: 5px;
     font-weight: bold;
-    color: #555;
+    color: #666;
   }
   input,
   textarea {
