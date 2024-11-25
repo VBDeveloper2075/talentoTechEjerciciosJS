@@ -1,579 +1,586 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
-
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow-x: hidden;
-  box-sizing: border-box; 
-  background: #a1ffce; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #faffd1,
-    #a1ffce
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #faffd1,
-    #a1ffce
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  width: auto;
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-}
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background: #a1ffce; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #faffd1,
+      #a1ffce
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #faffd1,
+      #a1ffce
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: auto;
+  }
 
-nav ul li {
-  flex: 1;
-}
+  nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
 
-nav ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  margin-right: 2px;
-}
+  nav ul li {
+    flex: 1;
+  }
 
-nav ul li a:hover {
-  background-color: #4caf50;
-}
-
-/* Estilos para las cards del index */
-
-.container-categories {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-}
-
-.card-category {
-  height: 15rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 2rem;
-  gap: 1rem;
-  overflow: hidden;
-}
-
-.category-blogs,
-.category-descripciones,
-.category-redaccion {
-  background-image: linear-gradient(#e0ede880, #cbf4c680),
-    url("assets/book-4109187_640.png");
-  background-size: cover;
-  color: #fff;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.card-category p {
-  font-size: 1.5rem;
-  color: rgb(19, 151, 158);
-  text-transform: capitalize;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.card-category span {
-  font-size: 1rem;
-  color: #fff;
-  padding: 1rem;
-  cursor: pointer;
-}
-
-.card-category span:hover {
-  color: #358139;
-}
-
-/* Estilos footer */
-
-footer {
-  width: 100%;
-  background: #0cebeb; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #29ffc6,
-    #20e3b2,
-    #0cebeb
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #29ffc6,
-    #20e3b2,
-    #0cebeb
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 1rem 0;
-  border-top: 1px solid #e9ecef;
-}
-
-footer p {
-  font-size: 1.25rem;
-  padding: 0 1rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  color: #fff;
-  text-align: center;
-}
-
-footer #iconos {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-footer #iconos a {
-  font-size: 1.5rem;
-  transition: color 0.4s;
-  color: #fff;
-}
-
-footer #iconos a:hover {
-  color: #4caf50;
-}
-
-/* Estilos para la página de contacto */
-.contact-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(246, 242, 242, 0.1);
-}
-
-.contact-container h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: rgb(19, 151, 158);
-}
-
-.contact-container form {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-container form .form-group {
-  margin-bottom: 15px;
-}
-
-.contact-container form .form-group label {
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #555;
-}
-
-.contact-container form .form-group input,
-.contact-container form .form-group textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  margin: 10px;
-}
-
-.contact-container textarea {
-  resize: vertical;
-  height: 90%;
-}
-
-.contact-container button {
-  padding: 10px 15px;
-  background-color: rgb(19, 151, 158);
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  width: 100%;
-  /* Replace 'button' with a valid CSS property */
-  color: rgb(19, 151, 158);
-}
-
-
-nav button {
-  background-color: #4caf50; /* Color de fondo */
-  color: white; /* Color del texto */
-  padding: 10px 20px; /* Espaciado interno */
-  margin: 5px; /* Espaciado externo */
-  border: none; /* Sin borde */
-  border-radius: 5px; /* Bordes redondeados */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
-  width: 100%;
-}
-
-nav button:hover {
-  background-color: #99ed9e; /* Color de fondo al pasar el cursor */
-}
-
-.holder {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.card p {
-  color: #666;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-nav ul li {
-  flex: 4;
-}
-
-nav ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  background-color: #d3d3d3; /* Fondo gris */
-  margin-right: 2px;
-  border-radius: 3px; /* Bordes redondeados */
-}
-
-nav ul li a:hover {
-  background-color: #111;
-}
-
-/* Estilos para la página de contacto */
-.contact-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-  background: linear-gradient(
-    to right,
-    #faffd1,
-    #a1ffce
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-container h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #666;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-container form {
-  margin-bottom: 15px;
-}
-
-.contact-container form  label {
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #555;
-}
- input, textarea {
-  width: 90%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-textarea {
-  resize: vertical;
-  height: 100px;
-}
-
-.contact-container form button {
-  padding: 10px 15px;
-  background-color: #53ac90;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  width: 100%;
-}
-
-
-
-header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 100%;
-  background-color: #53ac90;
-  color: #fff;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  justify-content: space-between;
-}
-
-.container-headr {
-  max-width: 100%;
-  margin-left: 50px;
-  display: flex;
-  align-items: center;
-}
-
-/* Logo */
-.icon {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
-}
-
-/* Encabezado */
-h1 {
-  font-size: 2rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-/* Botón de menú hamburguesa */
-.menu-btn {
-  margin-right: 50px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 5px 0;
-}
-
-/* Estilos para tablets (media queries) */
-@media (max-width: 768px) {
-  .dropdown {
+  nav ul li a {
     display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: 2px;
+  }
+
+  nav ul li a:hover {
+    background-color: #4caf50;
+  }
+
+  /* Estilos para las cards del index */
+
+  .container-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+
+  .card-category {
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    gap: 1rem;
+    overflow: hidden;
+  }
+
+  .category-blogs,
+  .category-descripciones,
+  .category-redaccion {
+    background-image: linear-gradient(#e0ede880, #cbf4c680),
+      url("assets/book-4109187_640.png");
+    background-size: cover;
+    color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .card-category p {
+    font-size: 1.5rem;
+    color: rgb(19, 151, 158);
+    text-transform: capitalize;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .card-category span {
+    font-size: 1rem;
+    color: #fff;
+    padding: 1rem;
+    cursor: pointer;
+  }
+
+  .card-category span:hover {
+    color: #358139;
+  }
+
+  /* Estilos footer */
+
+  footer {
+    width: 100%;
+    background: #0cebeb; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #29ffc6,
+      #20e3b2,
+      #0cebeb
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #29ffc6,
+      #20e3b2,
+      #0cebeb
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    border-top: 1px solid #e9ecef;
+  }
+
+  footer p {
+    font-size: 1.25rem;
+    padding: 0 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    text-align: center;
+  }
+
+  footer #iconos {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  footer #iconos a {
+    font-size: 1.5rem;
+    transition: color 0.4s;
+    color: #fff;
+  }
+
+  footer #iconos a:hover {
+    color: #4caf50;
+  }
+
+  /* Estilos para la página de contacto */
+  .contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(246, 242, 242, 0.1);
+  }
+
+  .contact-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(19, 151, 158);
+  }
+
+  .contact-container form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-container form .form-group {
+    margin-bottom: 15px;
+  }
+
+  .contact-container form .form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+
+  .contact-container form .form-group input,
+  .contact-container form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px;
+  }
+
+  .contact-container textarea {
+    resize: vertical;
+    height: 90%;
+  }
+
+  .contact-container button {
+    padding: 10px 15px;
+    background-color: rgb(19, 151, 158);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    /* Replace 'button' with a valid CSS property */
+    color: rgb(19, 151, 158);
+  }
+
+  nav button {
+    background-color: #4caf50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    margin: 5px; /* Espaciado externo */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+    width: 100%;
+  }
+
+  nav button:hover {
+    background-color: #99ed9e; /* Color de fondo al pasar el cursor */
+  }
+
+  .holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card p {
+    color: #666;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav ul li {
+    flex: 4;
+  }
+
+  nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #d3d3d3; /* Fondo gris */
+    margin-right: 2px;
+    border-radius: 3px; /* Bordes redondeados */
+  }
+
+  nav ul li a:hover {
+    background-color: #111;
+  }
+
+  /* Estilos para la página de contacto */
+  .contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(
+      to right,
+      #faffd1,
+      #a1ffce
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #666;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-container form {
+    margin-bottom: 15px;
+  }
+
+  .contact-container form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  input,
+  textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  textarea {
+    resize: vertical;
+    height: 100px;
+  }
+
+  .contact-container form button {
+    padding: 10px 15px;
+    background-color: #53ac90;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    background-color: #53ac90;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: space-around;
+  }
+
+  .container-headr {
+    max-width: 100%;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Logo */
+  .icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+  /* Encabezado */
+  h1 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Botón de menú hamburguesa */
+  .menu-btn {
+    margin-right: 50px;
+    background: none;
     border: none;
     cursor: pointer;
   }
-}
 
-nav {
-  width: 100%;
-  background: #0cebeb;
-  background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
-  background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
-
-nav ul li {
-  margin: 10px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 8px 15px;
-  background-color: #53ac90;
-  border-radius: 5px;
-}
-
-nav ul li a:hover {
-  background-color: #53ac90;
-  transition: box-shadow 0.3s ease;
-}
-
-a:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-a.shadow {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-}
-
-/* Contenedor principal */
-.holder {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.historia {
-  margin-bottom: 40px;
-}
-
-.historia h2 {
-  font-size: 28px;
-  color: #878585;
-  margin-bottom: 15px;
-}
-
-.historia p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #666;
-  margin-bottom: 10px;
-}
-
-/* Estilos para las cards */
-.staff .personas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.card p {
-  margin-top: 0;
-}
-
-.persona {
-  background-color: #fff;
-  width: 32%;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.persona h5 {
-  font-size: 20px;
-  margin: 15px;
-  color: #666;
-}
-
-.persona h6 {
-  font-size: 16px;
-  margin: 0 15px 10px 15px;
-  color: #666;
-}
-
-.persona p {
-  font-size: 14px;
-  line-height: 1.5;
-  color: #555;
-  margin: 0 15px 15px 15px;
-}
-
-/* Media Queries ... luego pasa a 2 cards x linea*/
-@media (max-width: 992px) {
-  .persona {
-    width: 48%;
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
   }
-}
 
-/* Media Queries ... luego pasa a 1 card x linea*/
-@media (max-width: 424px) {
-  .persona {
+  /* Estilos para tablets (media queries) */
+  @media (max-width: 768px) {
+    .dropdown {
+      display: block;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  nav {
     width: 100%;
+    background: #0cebeb;
+    background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
+    background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
   }
-}
 
-nav button {
-  color: white;
-  margin: 5px; /* Espaciado externo */
-  border: none; /* Sin borde */
-  border-radius: 3px; /* Bordes redondeados */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
-  width: 100%;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
 
-holder {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+  nav ul li {
+    margin: 10px;
+  }
 
-section {
-  font-family: initial;
-}
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: #53ac90;
+    border-radius: 5px;
+  }
 
-section .container-categories {
-  margin: 2px;
-}
+  nav ul li a:hover {
+    background-color: #53ac90;
+    transition: box-shadow 0.3s ease;
+  }
 
-main h1 {
-  text-align: center;
-}
+  a:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
 
-main p {
-  margin: 20px;
-  color: #666;
-}
 
-main h2 {
-  margin: 20px;
-  color: #666;
-}
 
-.shopping-cart {
-  position: relative;
+  a.shadow {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Contenedor principal */
+  .holder {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .historia {
+    margin-bottom: 40px;
+  }
+
+  .historia h2 {
+    font-size: 28px;
+    color: #878585;
+    margin-bottom: 15px;
+  }
+
+  .historia p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 10px;
+  }
+
+  /* Estilos para las cards */
+  .staff .personas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card p {
+    margin-top: 0;
+  }
+
+  .persona {
+    background-color: #fff;
+    width: 32%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .persona h5 {
+    font-size: 20px;
+    margin: 15px;
+    color: #666;
+  }
+
+  .persona h6 {
+    font-size: 16px;
+    margin: 0 15px 10px 15px;
+    color: #666;
+  }
+
+  .persona p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+    margin: 0 15px 15px 15px;
+  }
+
+  /* Media Queries ... luego pasa a 2 cards x linea*/
+  @media (max-width: 992px) {
+    .persona {
+      width: 48%;
+    }
+  }
+
+  /* Media Queries ... luego pasa a 1 card x linea*/
+  @media (max-width: 424px) {
+    .persona {
+      width: 100%;
+    }
+  }
+
+  nav button {
+    color: white;
+    margin: 5px; /* Espaciado externo */
+    border: none; /* Sin borde */
+    border-radius: 3px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  section {
+    font-family: initial;
+  }
+
+  section .container-categories {
+    margin: 2px;
+  }
+
+  main h1 {
+    text-align: center;
+  }
+
+  main p {
+    margin: 20px;
+    color: #666;
+  }
+
+  main h2 {
+    margin: 20px;
+    color: #666;
+  }
+
+  .shopping-cart {
+    position: relative;
   }
 
   /* para que la imagen del carrito sea blanca y no negra */
-.shopping-cart img {    
+  .shopping-cart img {
     filter: invert(1);
+  }
+
+  .ifr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .ifr iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Ocultar el nav y el h1 cuando el ancho es menor a 425px */
+  @media (max-width: 424px) {
+    nav,
+    h1 {
+      display: none;
+    }
+    .dropdown {
+      display: block;
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  /* Mostrar el nav y el h1, y ocultar el menu-btn cuando el ancho es mayor o igual a 425px */
+  @media (min-width: 425px) {
+    nav,
+    h1 {
+      display: block;
+    }
+    .menu-btn {
+      display: none;
+    }
+  }
 }
 
-.ifr {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
 
-.ifr iframe {
-  width: 100%;
-  height: 100%;
-}
-
-/* Ocultar el nav y el h1 cuando el ancho es menor a 425px */
-@media (max-width: 424px) {
-  nav, h1 {
-    display: none;
-  }
-  .dropdown {
-    display: block;
-    position: absolute;
-    right: 0;
-  }
-}
-
-/* Mostrar el nav y el h1, y ocultar el menu-btn cuando el ancho es mayor o igual a 425px */
-@media (min-width: 425px) {
-  nav, h1 {
-    display: block;
-  }
-  .dropdown {
-    display: none;
-  }
-}
-}
