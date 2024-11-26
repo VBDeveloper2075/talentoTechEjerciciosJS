@@ -79,8 +79,8 @@
   }
 
   .card-category p {
-    font-size: 1.5rem;
-    color: rgb(19, 151, 158);
+    font-size: 1.2rem;
+    
     text-transform: capitalize;
     text-align: center;
     position: relative;
@@ -89,14 +89,14 @@
     text-overflow: ellipsis;
   }
 
-  .card-category span {
+  .card-category span a {
     font-size: 1rem;
+    text-decoration: none;
     color: #fff;
-    padding: 1rem;
     cursor: pointer;
   }
 
-  .card-category span:hover {
+  .card-category span a:hover {
     color: #0cebeb;
   }
 
@@ -147,7 +147,7 @@
   }
 
   footer #iconos a:hover {
-    color: #0cebeb;
+    color: #a1ffce;
   }
 
   /* Estilos para la página de contacto */
@@ -581,6 +581,6 @@
       display: none;
     }
   }
-}
+
 
 
