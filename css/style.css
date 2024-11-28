@@ -373,10 +373,16 @@
 
   /* Estilos para tablets (media queries) */
   @media (max-width: 768px) {
-    .dropdown {
-      display: block;
-      border: none;
-      cursor: pointer;
+    .container-headr {
+      margin-left: 20px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    .menu-btn {
+      margin-right: 20px;
     }
   }
 
@@ -563,11 +569,6 @@
     nav,
     h1 {
       display: none;
-    }
-    .dropdown {
-      display: block;
-      position: absolute;
-      right: 0;
     }
   }
 
