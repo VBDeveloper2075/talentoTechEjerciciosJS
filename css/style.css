@@ -635,6 +635,7 @@ td {
 
 .dropdown-menu.show {
   display: block;
+  
 }
 
 .dropdown-menu ul {
@@ -645,14 +646,14 @@ td {
 
 .dropdown-menu ul li {
   padding: 12px 16px;
-  width: 100%; /* Make each list item occupy the full width */
+  width: 100%; 
 }
 
 .dropdown-menu ul li a {
   text-decoration: none;
   color: black;
-  display: block; /* Make the anchor tag a block element */
-  width: 100%; /* Make the anchor tag occupy the full width */
+  display: block; 
+  width: 100%; 
 }
 
 .dropdown-menu ul li a:hover {
