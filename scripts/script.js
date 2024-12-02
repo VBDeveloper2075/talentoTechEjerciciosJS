@@ -44,3 +44,9 @@ carrito.push(producto);
 console.log(carrito);
 
 localStorage.setItem("carrito", JSON.stringify(carrito));
+
+document.querySelector('.menu-btn').addEventListener('click', function() {
+  document.querySelector('.dropdown-menu').classList.toggle('show');
+});
+
+
