@@ -508,7 +508,7 @@ nav button {
   cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
   transition: background-color 0.3s ease;
   width: 100%;
-  text-shadow: 2px 2: 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 holder {
@@ -624,7 +624,7 @@ td {
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 100%; /* Position below the menu button */
+  top: 100%; /* p q se debajo del botón de menú */
   left: 50%;
   transform: translateX(-50%);
   background-color: white;
@@ -634,8 +634,7 @@ td {
 }
 
 .dropdown-menu.show {
-  display: block;
-  
+  display: block; 
 }
 
 .dropdown-menu ul {
