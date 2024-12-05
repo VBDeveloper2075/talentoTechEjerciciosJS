@@ -49,4 +49,12 @@ document.querySelector('.menu-btn').addEventListener('click', function() {
   document.querySelector('.dropdown-menu').classList.toggle('show');
 });
 
+// document.addEventListener('DOMContentLoaded', function() {
+//   const menuBtn = document.querySelector('.menu-btn');
+//   const dropdownMenu = document.querySelector('.dropdown-menu');
+
+//   menuBtn.addEventListener('click', function() {
+//       dropdownMenu.classList.toggle('show');
+//   });
+// });
 
