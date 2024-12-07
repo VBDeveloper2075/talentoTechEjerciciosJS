@@ -511,7 +511,7 @@ nav button {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-holder {
+.holder {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -624,7 +624,7 @@ td {
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 100%; /* p q se debajo del botón de menú */
+  top: 100%; /* Position below the menu button */
   left: 50%;
   transform: translateX(-50%);
   background-color: white;
@@ -634,7 +634,8 @@ td {
 }
 
 .dropdown-menu.show {
-  display: block; 
+  display: block;
+  
 }
 
 .dropdown-menu ul {
