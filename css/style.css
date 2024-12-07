@@ -532,7 +532,7 @@ td {
 }
 .dropdown-menu {
   display: none;
-  position: absolute;
+  position: rela;
   top: 100%; /* Position below the menu button */
   left: 50%;
   transform: translateX(-50%);
@@ -542,7 +542,8 @@ td {
   width: 200px; /* Adjust width as needed */
 }
 .dropdown-menu.show {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .dropdown-menu ul {
