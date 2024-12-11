@@ -37,7 +37,7 @@ nav ul li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  margin-right: 2px;
+  margin-right: 1px;
 }
 nav ul li a:hover {
   background-color: #4caf50;
@@ -211,15 +211,7 @@ nav ul {
 nav ul li {
   flex: 4;
 }
-nav ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  margin-right: 2px;
-  border-radius: 3px; /* Bordes redondeados */
-}
+
 nav ul li a:hover {
   background-color: #111;
 }
@@ -255,7 +247,7 @@ form {
   color: #666;
 }
 input,
-textarea 
+textarea {
   width: 90%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -344,11 +336,9 @@ nav ul{
 }
 nav ul li {
   align-items: flex-start;
-  margin: 5px;
 }
 nav ul li a {
   color: #fff;
-  text-decoration: none;
   padding: 8px 15px;
   background-color: #53ac90;
   border-radius: 5px;
@@ -438,6 +428,7 @@ nav button {
   width: 100%;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
+
 .holder {
   display: flex;
   flex-wrap: wrap;
@@ -538,30 +529,42 @@ td {
   background-color: white;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  width: 200px; /* Adjust width as needed */
+  width: 200px;
 }
+.dropdown-menu.show {
+  position: absolute; /* Cambiado de relativo a absoluto */
+  display: flex;
+  flex-direction: column;
+  top: 100%; /* Asegura que esté justo debajo del botón de menú */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 200px; /* Ajusta el ancho según sea necesario */
+}  
+/* si jode volver a poner este bloque 
 .dropdown-menu.show {
   position: relative;
   display: flex;
   flex-direction: column;
 }
+*/
 
 body {
   overflow: auto;
 }
-
 .dropdown-menu ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 .dropdown-menu ul li {
-  padding: 12px 16px;
+  padding: 10px 12px;
   width: 100%; 
 }
 .dropdown-menu ul li a {
   text-decoration: none;
-  color: black;
   display: block; 
   width: 100%; 
 }
@@ -570,5 +573,4 @@ body {
 }
 .dropdown-menu ul li a.active {
   background-color: #53ac90;
-  color: white;
 }
