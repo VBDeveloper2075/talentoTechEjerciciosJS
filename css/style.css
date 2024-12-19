@@ -579,10 +579,20 @@ main h2 {
 
 /* Mostrar el nav y el h1, y ocultar el menu-btn cuando el ancho es mayor o igual a 425px */
 @media (min-width: 425px) {
+  .holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .dropdown-menu {
+    display: inline-block;
+  }
+
   nav,
   h1 {
-    display: block;
+    display: inline-block;
   }
+  
   .menu-btn {
     display: none;
   }
