@@ -234,10 +234,11 @@ nav button:hover {
 
 nav ul {
   list-style-type: none;
-  margin: 0;
+  margin: 5px;
   padding: 0;
   display: flex;
   justify-content: space-between;
+  color: white;
 }
 
 nav ul li {
@@ -393,7 +394,6 @@ nav {
 
 nav ul{
   display: flex;
-  flex-direction: column;
   list-style: none;
 }
 
