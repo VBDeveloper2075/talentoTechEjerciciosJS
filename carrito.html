@@ -10,12 +10,10 @@
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="carrito.html" onclick="limpiarCarrito()">Vaciar Carrito</a></li>
       </ul>
     </nav>
     <main>
-      <h1>Mi Tienda</h1>
-
       <section class="carrito">
         <h2>Carrito</h2>
 
@@ -36,8 +34,13 @@
           </tbody>
         </table>
       </section>
-
-      <script src="./scripts/carrito.js"></script>
+      <section class="total">
+        <h2>Total</h2>
+        <p id="total">0</p>
+      </section>
+      <button id="comprar">Comprar</button>
     </main>
+    <script src="./scripts/productos.js"></script>
+    <script src="./scripts/carrito.js"></script> 
   </body>
 </html>

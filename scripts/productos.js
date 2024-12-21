@@ -33,16 +33,15 @@ const productos = [
       stock: 10,
     },
   ];
-  
   // Obtengo el item 'carrito' del local storage que es un texto
   // Lo intento transformar a un Objeto de javaScript
   // Si algo falla asigno un array a la constante, sino el Objeto
   const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-  
-  const listadoProductos = document.querySelector(".listado-productos");
-  
+
+  const listadoProductos = document.querySelector(".listadoProductos");
+
   listadoProductos.innerHTML = "<h2>Productos</h2>";
-  
+
   // Recorro el array de productos
   productos.forEach((producto) => {
     // Creo el HTML con los datos de cada producto
@@ -54,11 +53,11 @@ const productos = [
             <button type="button" class="agregar">Agregar</button>
           </article>
       `;
-  
+
     // Agrego la section el html para ir mostrando cada producto
     listadoProductos.innerHTML += html;
   });
-  
+
   // Escucho todos los eventos click el documento
   document.addEventListener("click", (event) => {
     // Si el elemento donde se hizo click contiene la clase 'agregar'
@@ -66,14 +65,14 @@ const productos = [
       // Busco el contenedor mas cercano que se un 'article'
       // Obtengo el id del atributo data-id
       const id = event.target.closest("article").dataset.id;
-  
+
       // Busco el elemento 'producto' dentro del array producto que tenga el 'id'
       const elemento = productos.find((producto) => producto.id == id);
       console.log(elemento);
-  
+
       // Uso destructuring para creo las constante con los valores del Objeto
       const { nombre, precio } = elemento;
-  
+
       // Creo el objeto producto para insertar en el carrito
       const producto = {
         id: id,
@@ -81,10 +80,19 @@ const productos = [
         precio: precio,
         cantidad: 1,
       };
-  
+
       carrito.push(producto);
-  
+
       // Guardo en el localStorage el array carrito en formato JSON
       localStorage.setItem("carrito", JSON.stringify(carrito));
     }
   });
+
+  // Función para limpiar el carrito
+  function limpiarCarrito() {
+    // Vaciar el array carrito
+    carrito.length = 0;
+
+    // Actualizar el localStorage
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+  }
