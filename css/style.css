@@ -446,6 +446,11 @@ main p {
 main h2 {
   margin: 20px;
   color: #666;
+  text-align: center;
+}
+h3, h4 {
+  color: #53ac90;
+  text-align: center;
 }
 .shopping-cart {
   position: relative;
@@ -464,10 +469,12 @@ main h2 {
   align-items: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 .ifr iframe {
   width: 100%;
   height: 100%;
+  border: none;
 }
 /* Ocultar el nav y el h1 cuando el ancho es menor a 425px */
 @media (max-width: 424px) {
@@ -550,13 +557,6 @@ td {
   z-index: 1;
   width: 200px; /* Ajusta el ancho según sea necesario */
 }  
-
-/* .dropdown-menu.show {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-} */
-
 
 body {
   overflow: auto;
