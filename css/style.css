@@ -37,7 +37,8 @@ nav ul li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  margin-right: 1px;
+  margin: 10px; /* Increased margin to separate buttons */
+  justify-content: space-between;
 }
 nav ul li a:hover {
   background-color: #4caf50;
@@ -334,7 +335,6 @@ nav ul li {
   align-items: flex-start;
 }
 nav ul li a {
-  color: #fff;
   padding: 8px 15px;
   background-color: #53ac90;
   border-radius: 5px;
@@ -568,7 +568,7 @@ body {
 }
 .dropdown-menu ul li {
   padding: 10px 12px;
-  width: 100%; 
+  width: 90%; 
 }
 .dropdown-menu ul li a {
   text-decoration: none;
