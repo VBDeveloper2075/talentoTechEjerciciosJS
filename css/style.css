@@ -329,11 +329,7 @@ nav {
   background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
   background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
 }
-nav ul{
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-}
+
 nav ul li {
   align-items: flex-start;
 }
@@ -482,6 +478,14 @@ main h2 {
   .menu-btn {
     display: inline-block;
   }
+  .dropdown-menu { 
+    display: block; 
+  }
+  nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
 }
 /* Mostrar el nav y el h1, y ocultar el menu-btn cuando el ancho es mayor o igual a 425px */
 @media (min-width: 425px) {
@@ -492,7 +496,10 @@ main h2 {
   .menu-btn {
     display: none;
   }
+  .dropdown-menu { display: none; } 
 }
+
+/* Estilos para la página de contacto */
 table {
   border-collapse: collapse;
   width: 100%;
@@ -532,7 +539,7 @@ td {
   width: 200px;
 }
 .dropdown-menu.show {
-  position: absolute; /* Cambiado de relativo a absoluto */
+  position: relative; /* Cambiado de relativo a absoluto */
   display: flex;
   flex-direction: column;
   top: 100%; /* Asegura que esté justo debajo del botón de menú */
@@ -544,11 +551,11 @@ td {
   width: 200px; /* Ajusta el ancho según sea necesario */
 }  
 
-.dropdown-menu.show {
+/* .dropdown-menu.show {
   position: relative;
   display: flex;
   flex-direction: column;
-}
+} */
 
 
 body {

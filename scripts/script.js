@@ -25,6 +25,12 @@ const productos = [
   },
 ];
 
+window.addEventListener('resize', function() {
+  if (window.innerWidth >= 425) {
+      document.querySelector('.dropdown-menu').classList.remove('show');
+  }
+});
+
 const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 // console.log(carrito, typeof carrito);
 
@@ -45,4 +51,10 @@ console.log(carrito);
 
 localStorage.setItem("carrito", JSON.stringify(carrito));
 
-
+document.addEventListener('DOMContentLoaded', function() {
+  const menuBtn = document.querySelector('.menu-btn');
+  const dropdownMenu = document.querySelector('.dropdown-menu');
+  menuBtn.addEventListener('click', function() {
+      dropdownMenu.classList.toggle('show');
+  });
+});
