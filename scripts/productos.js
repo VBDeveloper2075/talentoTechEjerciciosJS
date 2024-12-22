@@ -47,12 +47,12 @@ const productos = [
   productos.forEach((producto) => {
     // Creo el HTML con los datos de cada producto
     const html = `
-          <article data-id="${producto.id}">
+          <section data-id="${producto.id}">
             <h3>${producto.nombre}</h3>
             <p>${producto.descripcion}</p>
             <p>$ ${producto.precio}</p>
             <button type="button" class="agregar">Agregar</button>
-          </article>
+          </section>
       `;
   
     // Agrego la section el html para ir mostrando cada producto
@@ -63,9 +63,9 @@ const productos = [
   document.addEventListener("click", (event) => {
     // Si el elemento donde se hizo click contiene la clase 'agregar'
     if (event.target.classList.contains("agregar")) {
-      // Busco el contenedor mas cercano que se un 'article'
+      // Busco el contenedor mas cercano que se un 'section'
       // Obtengo el id del atributo data-id
-      const id = event.target.closest("article").dataset.id;
+      const id = event.target.closest("section").dataset.id;
   
       // Busco el elemento 'producto' dentro del array producto que tenga el 'id'
       const elemento = productos.find((producto) => producto.id == id);
