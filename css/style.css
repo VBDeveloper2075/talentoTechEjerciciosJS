@@ -543,13 +543,13 @@ td {
   z-index: 1;
   width: 200px; /* Ajusta el ancho según sea necesario */
 }  
-/* si jode volver a poner este bloque 
+
 .dropdown-menu.show {
   position: relative;
   display: flex;
   flex-direction: column;
 }
-*/
+
 
 body {
   overflow: auto;
