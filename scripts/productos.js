@@ -1,90 +1,61 @@
-// Los productos en un array de objetos
-const productos = [
-    {
-      id: 1,
-      nombre: "Producto 1",
-      descripcion: "Descripción Producto 1",
-      imagen: "imagen-1.jpg",
-      precio: 10,
-      stock: 1,
-    },
-    {
-      id: 2,
-      nombre: "Producto 2",
-      descripcion: "Descripción Producto 2",
-      imagen: "imagen-2.jpg",
-      precio: 20,
-      stock: 10,
-    },
-    {
-      id: 3,
-      nombre: "Producto 3",
-      descripcion: "Descripción Producto 3",
-      imagen: "imagen-3.jpg",
-      precio: 30,
-      stock: 80,
-    },
-    {
-      id: 4,
-      nombre: "Producto 4",
-      descripcion: "Descripción Producto 4",
-      imagen: "imagen-4.jpg",
-      precio: 50,
-      stock: 10,
-    },
-  ];
-  
-  // Obtengo el item 'carrito' del local storage que es un texto
-  // Lo intento transformar a un Objeto de javaScript
-  // Si algo falla asigno un array a la constante, sino el Objeto
-  const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-  
-  const listadoProductos = document.querySelector(".listado-productos");
-  
-  listadoProductos.innerHTML = "<h2>Productos</h2>";
-  
-  // Recorro el array de productos
-  productos.forEach((producto) => {
-    // Creo el HTML con los datos de cada producto
-    const html = `
-          <section data-id="${producto.id}">
-            <h3>${producto.nombre}</h3>
-            <p>${producto.descripcion}</p>
-            <p>$ ${producto.precio}</p>
-            <button type="button" class="agregar">Agregar</button>
-          </section>
-      `;
-  
-    // Agrego la section el html para ir mostrando cada producto
-    listadoProductos.innerHTML += html;
-  });
-  
-  // Escucho todos los eventos click el documento
-  document.addEventListener("click", (event) => {
-    // Si el elemento donde se hizo click contiene la clase 'agregar'
-    if (event.target.classList.contains("agregar")) {
-      // Busco el contenedor mas cercano que se un 'section'
-      // Obtengo el id del atributo data-id
-      const id = event.target.closest("section").dataset.id;
-  
-      // Busco el elemento 'producto' dentro del array producto que tenga el 'id'
-      const elemento = productos.find((producto) => producto.id == id);
-      console.log(elemento);
-  
-      // Uso destructuring para creo las constante con los valores del Objeto
-      const { nombre, precio } = elemento;
-  
-      // Creo el objeto producto para insertar en el carrito
-      const producto = {
-        id: id,
-        nombre: nombre,
-        precio: precio,
-        cantidad: 1,
-      };
-  
-      carrito.push(producto);
-  
-      // Guardo en el localStorage el array carrito en formato JSON
-      localStorage.setItem("carrito", JSON.stringify(carrito));
+// Contador del Carrito
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+function actualizarContadorCarrito() {
+    const contadorCarrito = document.getElementById("contador-carrito");
+    if (contadorCarrito){
+   const total = carrito.reduce((acc, producto) => acc + producto.cantidad, 0);
+    contadorCarrito.textContent = total;
     }
-  });
+}
+actualizarContadorCarrito();
+// Gestion de Productos
+const productosContainer = document.getElementById("productos-container");
+// function para cargar los productos desde el archivo json
+async function cargarProductos() {
+    try {
+    const respuesta = await fetch("productos.json");
+    if(!respuesta.ok){
+        throw new Error("Error al cargar los productos");
+    }
+    const productos = await respuesta.json();
+    mostrarProductos(productos);
+} catch (error) {
+    console.error("Error:", error);
+    productosContainer.innerHTML = "<p>Error al cargar productos.</p>";
+}
+}
+// Function para mostrar los productos en el html
+function mostrarProductos(productos) {
+    if (productos.length === 0) {
+        productosContainer.innerHTML = "<p>No hay productos disponibles</p>";
+        return;
+    }
+    productosContainer.innerHTML ="";
+    productos.forEach(producto => {
+        productosContainer.innerHTML += `
+        <div class="card">
+        <img src="${producto.imagen}" alt="${producto.nombre}">
+        <h3>${producto.nombre}</h3>
+        <p>${producto.descripcion}</p>
+        <p>Precio: $${producto.precio}</p>
+        <button onclick="agregarAlCarrito(${producto.id}, '${producto.nombre}', ${producto.precio})">
+        Agregar al Carrito
+        </button>
+        </div>
+        `;
+});
+// Function para agregar producto al carrito
+}
+function agregarAlCarrito(id,nombre,precio) {
+    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    const item = carrito.find(producto => producto.id === id);
+    if (item) {
+        item.cantidad++;}
+    else {
+        carrito.push({id, nombre, precio, cantidad: 1});
+    }
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+    actualizarContadorCarrito();
+  alert(`${nombre} agregado al carrito`);
+}
+cargarProductos();

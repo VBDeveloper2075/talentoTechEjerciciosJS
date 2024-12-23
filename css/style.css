@@ -30,6 +30,9 @@ nav ul {
 }
 nav ul li {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 nav ul li a {
   display: block;
@@ -211,6 +214,9 @@ nav ul {
 }
 nav ul li {
   flex: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav ul li a:hover {
@@ -414,6 +420,16 @@ a.shadow {
     width: 100%;
   }
 }
+
+button.agregar {
+  background-color: #53ac90;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 nav button {
   color: white;
   margin: 5px; /* Espaciado externo */
@@ -463,6 +479,17 @@ h3, h4 {
   color: #53ac90;
   cursor: pointer;
 }
+#contador-carrito {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #8df747;
+  color: white;
+  border-radius: 50%;
+  font-size: 14px;
+  padding: 5px 8px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 .ifr {
   display: flex;
   flex-direction: column;
@@ -470,6 +497,9 @@ h3, h4 {
   justify-content: center;
   text-align: center;
   width: 100%;
+  border: olivedrab;
+border: 2px solid #ccc;
+box-shadow: 0 4px 8px rgba(0, 2, 0, 0.3);
 }
 .ifr iframe {
   width: 100%;
