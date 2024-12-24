@@ -1,30 +1,3 @@
-const productos = [
-  {
-    id: 1,
-    nombre: "Producto 1",
-    descripcion: "Descripción Producto 1",
-    imagen: "imagen-1.jpg",
-    precio: 10,
-    stock: 1,
-  },
-  {
-    id: 2,
-    nombre: "Producto 2",
-    descripcion: "Descripción Producto 2",
-    imagen: "imagen-2.jpg",
-    precio: 20,
-    stock: 10,
-  },
-  {
-    id: 3,
-    nombre: "Producto 3",
-    descripcion: "Descripción Producto 3",
-    imagen: "imagen-3.jpg",
-    precio: 30,
-    stock: 80,
-  },
-];
-
 window.addEventListener('resize', function() {
   if (window.innerWidth >= 425) {
       document.querySelector('.dropdown-menu').classList.remove('show');
