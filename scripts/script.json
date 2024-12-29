@@ -30,8 +30,7 @@
     {
         "id": 5,
         "nombre": "Copywriting para Páginas Web",
-        "descripcion": "Textos persuasivos para páginas de inicio, sobre nosotros, y servicios.
-Llamadas a la acción efectivas y optimización SEO.",
+        "descripcion": "Textos persuasivos para páginas de inicio, sobre nosotros, y servicios. Llamadas a la acción efectivas y optimización SEO.",
         "imagen": "imagen-5.jpg",
         "precio": 50
     },
@@ -59,16 +58,14 @@ Llamadas a la acción efectivas y optimización SEO.",
     {
         "id": 9,
         "nombre": "Redacción Técnica",
-        "descripcion": "Manuales de usuario y guías de productos.
-Documentación técnica y whitepapers.",
+        "descripcion": "Manuales de usuario y guías de productos. Documentación técnica y whitepapers.",
         "imagen": "imagen-9.jpg",
         "precio": 90
     },
     {
         "id": 10,
         "nombre": "Redacción de Testimonios y Reseñas",
-        "descripcion": "Creación de testimonios de clientes.
-Redacción de reseñas de productos y servicios.",
+        "descripcion": "Creación de testimonios de clientes. Redacción de reseñas de productos y servicios.",
         "imagen": "imagen-10.jpg",
         "precio": 100
     },

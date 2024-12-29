@@ -54,7 +54,7 @@ mostrarCarrito()
 actualizarContadorCarrito;
 }
 //formulario de compra
-document.getElementById("formulario-compra").addEventListener("submit", (e) => {
+document.getElementsByClassName("contact-container").addEventListener("submit", (e) => {
     e.preventDefault();
     const direccionInput = document.getElementById("direccion").value;
     const mensajeConfirmacion = document.getElementById("mensaje-confirmacion");
