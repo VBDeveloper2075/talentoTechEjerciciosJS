@@ -464,7 +464,8 @@ main h2 {
   color: #666;
   text-align: center;
 }
-h3, h4 {
+h3,
+h4 {
   color: #53ac90;
   text-align: center;
 }
@@ -498,8 +499,8 @@ h3, h4 {
   text-align: center;
   width: 100%;
   border: olivedrab;
-border: 2px solid #ccc;
-box-shadow: 0 4px 8px rgba(0, 2, 0, 0.3);
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 2, 0, 0.3);
 }
 .ifr iframe {
   width: 100%;
@@ -515,10 +516,10 @@ box-shadow: 0 4px 8px rgba(0, 2, 0, 0.3);
   .menu-btn {
     display: inline-block;
   }
-  .dropdown-menu { 
-    display: block; 
+  .dropdown-menu {
+    display: block;
   }
-  nav ul{
+  nav ul {
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -533,7 +534,9 @@ box-shadow: 0 4px 8px rgba(0, 2, 0, 0.3);
   .menu-btn {
     display: none;
   }
-  .dropdown-menu { display: none; } 
+  .dropdown-menu {
+    display: none;
+  }
 }
 
 /* Estilos para la página de contacto */
@@ -586,7 +589,7 @@ td {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   width: 200px; /* Ajusta el ancho según sea necesario */
-}  
+}
 
 body {
   overflow: auto;
@@ -598,16 +601,21 @@ body {
 }
 .dropdown-menu ul li {
   padding: 10px 12px;
-  width: 90%; 
+  width: 90%;
 }
 .dropdown-menu ul li a {
   text-decoration: none;
-  display: block; 
-  width: 100%; 
+  display: block;
+  width: 100%;
 }
 .dropdown-menu ul li a:hover {
   background-color: #ddd;
 }
 .dropdown-menu ul li a.active {
   background-color: #53ac90;
+}
+
+#img-tienda {
+  width: 100px;
+  height: 100px;
 }
