@@ -1,4 +1,4 @@
-fetch('./scripts/script.json')
+let producto= fetch('./scripts/script.json')
   .then(response => response.json())
   .then(data => {
     console.log(data); 
@@ -8,13 +8,13 @@ fetch('./scripts/script.json')
     console.error('Hubo un error al obtener los productos:', error);
   });
 
-  const crearHTML = (item) => {
+  const crearHTML = (producto) => {
     const html = `
-      <article data-id="${item.id}">
-        <h3>${item.nombre}</h3> 
-        <img src="${item.imagen}" width="200" alt="${item.nombre}"> 
-        <p>${item.descripcion}</p> 
-        <p>$ ${item.precio}</p>
+      <article data-id="${producto.id}">
+        <h3>${producto.nombre}</h3> 
+        <img src="${producto.imagen}" width="200" alt="${producto.nombre}"> 
+        <p>${producto.descripcion}</p> 
+        <p>$ ${producto.precio}</p>
         <button type="button">Agregar</button> 
       </article>
     `;
@@ -22,7 +22,7 @@ fetch('./scripts/script.json')
   };
 
   const mostrarProductos = (productos) => {
-    const contenedor = document.getElementById('contenedor-productos'); 
+    const contenedor = document.getElementById('productosContainer'); 
     if (contenedor) {
       contenedor.innerHTML = ''; 
       productos.forEach((producto) => {

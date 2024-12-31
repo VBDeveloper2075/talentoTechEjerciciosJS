@@ -3,105 +3,105 @@
         "id": 1,
         "nombre": "Redacción de Contenidos para Blogs",
         "descripcion": "Artículos informativos y educativos. Publicaciones de tendencias y novedades del sector.",
-        "imagen": "imagen-1.jpg",
+        "imagen": "./css/assets/search-engine-optimization-4111000_640.jpg",
         "precio": 10
     },
     {
         "id": 2,
         "nombre": "Descripciones de Productos",
         "descripcion": "Descripciones detalladas y atractivas. Optimización SEO para mejorar la visibilidad.",
-        "imagen": "imagen-2.jpg",
+        "imagen": "./css/assets/",
         "precio": 20
     },
     {
         "id": 3,
         "nombre": "Redacción de Correos Electrónicos",
         "descripcion": "Campañas de email marketing. Boletines informativos y promociones.",
-        "imagen": "imagen-3.jpg",
+        "imagen": "./css/assets/analytics-2618277_640.jpg",
         "precio": 30
     },
     {
         "id": 4,
         "nombre": "Gestión de Redes Sociales",
         "descripcion": "Creación de publicaciones y contenido visual. Estrategias de engagement y crecimiento de seguidores.",
-        "imagen": "imagen-4.jpg",
+        "imagen": "./css/assets/social-media-4523105_640.jpg",
         "precio": 40
     },
     {
         "id": 5,
         "nombre": "Copywriting para Páginas Web",
         "descripcion": "Textos persuasivos para páginas de inicio, sobre nosotros, y servicios. Llamadas a la acción efectivas y optimización SEO.",
-        "imagen": "imagen-5.jpg",
+        "imagen": "./css/assets/analyses-6898420_640.png",
         "precio": 50
     },
     {
         "id": 6,
         "nombre": "Traducción de Textos",
         "descripcion": "Traducción de textos generales y especializados.",
-        "imagen": "imagen-6.jpg",
+        "imagen": "./css/assets/writer-1421099_640.jpg",
         "precio": 60
     },
     {
         "id": 7,
         "nombre": "Creación de Contenidos para Redes Sociales",
         "descripcion": "Publicaciones creativas y atractivas. Estrategias de contenido para redes sociales.",
-        "imagen": "imagen-7.jpg",
+        "imagen": "./css/assets/online-marketing-1246457_640.jpg",
         "precio": 70
     },
     {
         "id": 8,
         "nombre": "Redacción de Contenidos para E-commerce",
         "descripcion": "Descripción de productos y categorías. Textos persuasivos y optimizados para SEO.",
-        "imagen": "imagen-8.jpg",
+        "imagen": "./css/assets/",
         "precio": 80
     },
     {
         "id": 9,
         "nombre": "Redacción Técnica",
         "descripcion": "Manuales de usuario y guías de productos. Documentación técnica y whitepapers.",
-        "imagen": "imagen-9.jpg",
+        "imagen": "./css/assets/floor-plan-1474454_640.jpg",
         "precio": 90
     },
     {
         "id": 10,
         "nombre": "Redacción de Testimonios y Reseñas",
         "descripcion": "Creación de testimonios de clientes. Redacción de reseñas de productos y servicios.",
-        "imagen": "imagen-10.jpg",
+        "imagen": "./css/assets/woman-5835657_640.jpg",
         "precio": 100
     },
     {
         "id": 11,
         "nombre": "Guiones para Videos y Podcasts",
         "descripcion": "Creación de guiones creativos y persuasivos. Contenido para videos y podcasts.",
-        "imagen": "imagen-11.jpg",
+        "imagen": "./css/assets/desk-1869579_640.jpg",
         "precio": 110
     },
     {
         "id": 12,
         "nombre": "Redacción de Contenidos para Landing Pages",
         "descripcion": "Textos persuasivos y llamadas a la acción efectivas. Optimización para conversiones.",
-        "imagen": "imagen-12.jpg",
+        "imagen": "./css/assets/shopping-4694470_640.jpg",
         "precio": 120
     },
     {
         "id": 13,
         "nombre": "Creación de Contenidos Visuales",
         "descripcion": "Diseño de infografías, imágenes y gráficos. Contenido visual para redes sociales y blogs.",
-        "imagen": "imagen-13.jpg",
+        "imagen": "./css/assets/paint-958689_640.jpg",
         "precio": 130
     },
     {
         "id": 14,
         "nombre": "Redacción de Contenidos para Redes Sociales",
         "descripcion": "Publicaciones creativas y atractivas. Estrategias de contenido para redes sociales.",
-        "imagen": "imagen-14.jpg",
+        "imagen": "./css/assets/web-design-1953128_640.jpg",
         "precio": 140
     },
     {
         "id": 15,
         "nombre": "Redacción de Contenidos para Sitios Web",
         "descripcion": "Textos persuasivos y optimizados para SEO. Contenido para páginas de inicio, servicios y más.",
-        "imagen": "imagen-15.jpg",
+        "imagen": "./css/assets/keyboard-3689235_640.jpg",
         "precio": 150
     }
 ]
