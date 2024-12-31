@@ -31,7 +31,7 @@ if (!carritoContainer || !totalElement) return;
     });
     totalElement.textContent = `Total: $${total}`;
 }
-// editar la cantidd de un producto
+// editar la cantidad de un producto
 function editarCantidad(index,accion){
 if (accion === "sumar") {
      carrito[index].cantidad++;

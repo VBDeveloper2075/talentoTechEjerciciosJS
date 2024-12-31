@@ -15,7 +15,7 @@ let producto= fetch('./scripts/script.json')
         <img src="${producto.imagen}" width="200" alt="${producto.nombre}"> 
         <p>${producto.descripcion}</p> 
         <p>$ ${producto.precio}</p>
-        <button type="button">Agregar</button> 
+        <button type="button" class="agregar" onclick="mostrarCarrito()">Agregar</button>
       </article>
     `;
     return html;
