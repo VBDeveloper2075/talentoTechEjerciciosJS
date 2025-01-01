@@ -620,18 +620,15 @@ body {
   height: 100px;
 }
 
-/* Estilos para las cards .container article*/
-.container article {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+/* Estilos para las cards .container article */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(32%, 1fr));
+  gap: 20px;
 }
-.container article p {
-  margin-top: 0;
-}
+
 .container article {
   background-color: #fff;
-  width: 32%;
   margin-bottom: 20px;
   border-radius: 10px;
   overflow: hidden;
@@ -644,15 +641,17 @@ body {
   color: #555;
   margin: 0 15px 15px 15px;
 }
-/* Media Queries ... luego pasa a 2 cards x linea*/
+
+/* Media Queries ... luego pasa a 2 cards x linea */
 @media (max-width: 992px) {
-  .container article {
-    width: 48%;
+  .container {
+    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
   }
 }
-/* Media Queries ... luego pasa a 1 card x linea*/
+
+/* Media Queries ... luego pasa a 1 card x linea */
 @media (max-width: 424px) {
-  .container article {
-    width: 100%;
+  .container {
+    grid-template-columns: 1fr;
   }
 }
