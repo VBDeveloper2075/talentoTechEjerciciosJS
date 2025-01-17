@@ -1,3 +1,17 @@
+window.addEventListener('resize', function() {
+  if (window.innerWidth >= 425) {
+    document.querySelector('.dropdown-menu').classList.remove('show');
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const menuBtn = document.querySelector('.menu-btn');
+  const dropdownMenu = document.querySelector('.dropdown-menu');
+  menuBtn.addEventListener('click', function() {
+    dropdownMenu.classList.toggle('show');
+  });
+});
+
 let producto= fetch('./scripts/script.json')
   .then(response => response.json())
   .then(data => {
@@ -14,8 +28,8 @@ let producto= fetch('./scripts/script.json')
         <h3>${producto.nombre}</h3> 
         <img src="${producto.imagen}" width="200" alt="${producto.nombre}"> 
         <p>${producto.descripcion}</p> 
-        <p>$ ${producto.precio}</p>
-        <button type="button" class="agregar" onclick="mostrarCarrito()">Agregar</button>
+        <p>Precio: $ ${producto.precio}</p>
+        <button type="button" class="agregar" data-id="${producto.id}">Agregar al Carrito</button>
       </article>
     `;
     return html;

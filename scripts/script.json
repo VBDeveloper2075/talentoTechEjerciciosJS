@@ -11,6 +11,7 @@
         "nombre": "Descripciones de Productos",
         "descripcion": "Descripciones detalladas y atractivas. Optimización SEO para mejorar la visibilidad.",
         "imagen": "./css/assets/writer-1421099_640.jpg",
+        "imagen": "./css/assets/floor-plan-1474454_640.jpg",
         "precio": 20
     },
     {
@@ -52,7 +53,7 @@
         "id": 8,
         "nombre": "Redacción de Contenidos para E-commerce",
         "descripcion": "Descripción de productos y categorías. Textos persuasivos y optimizados para SEO.",
-        "imagen": "./css/assets/keyboard-3689235_640.jpg",
+        "imagen": "./css/assets/",
         "precio": 80
     },
     {

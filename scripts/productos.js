@@ -32,18 +32,18 @@ function mostrarProductos(productos) {
     }
     productosContainer.innerHTML ="";
 
-    productos.forEach(producto => {
-        productosContainer.innerHTML += `
-          <div class="card" data-id="${producto.id}">
-            <img src="css/assets/${producto.imagen}" alt="${producto.nombre}"> 
-            <h3>${producto.nombre}</h3>
-            <p>${producto.descripcion}</p>
-            <p>Precio: $${producto.precio}</p>
-            <button class="agregar" data-id="${producto.id}">Agregar al Carrito</button>
-          </div>
-        `;
-      });
-    }
+    // productos.forEach(producto => {
+    //     productosContainer.innerHTML += `
+    //       <div class="persona" data-id="${producto.id}">
+    //         <img src="css/assets/${producto.imagen}" alt="${producto.nombre}"> 
+    //         <h3>${producto.nombre}</h3>
+    //         <p>${producto.descripcion}</p>
+    //         <p>Precio: ${producto.precio}</p>
+    //         <button class="agregar" data-id="${producto.id}">Agregar al Carrito</button>
+    //       </div>
+    //     `;
+    //   });
+    // }
     
 // Function para agregar producto al carrito (solo una definición)
 function agregarAlCarrito(id,nombre,precio) {
