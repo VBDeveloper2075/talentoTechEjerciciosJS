@@ -13,7 +13,7 @@ const productosContainer = document.getElementById("productos-container");
 // function para cargar los productos desde el archivo json
 async function cargarProductos() {
     try {
-      const respuesta = await fetch("./scripts/script.json"); // Asegúrate de que la ruta sea correcta
+      const respuesta = await fetch("./scripts/script.json");
       if (!respuesta.ok) {
         throw new Error("Error al cargar los productos");
       }
@@ -43,8 +43,37 @@ function mostrarProductos(productos) {
     //       </div>
     //     `;
     //   });
-    // }
-    
+  }
+// Escucho todos los eventos click el documento
+document.addEventListener("click", (event) => {
+  // Si el elemento donde se hizo click contiene la clase 'agregar'
+  if (event.target.classList.contains("agregar")) {
+    // Busco el contenedor mas cercano que se un 'article'
+    // Obtengo el id del atributo data-id
+    const id = event.target.closest("article").dataset.id;
+
+    // Busco el elemento 'producto' dentro del array producto que tenga el 'id'
+    const elemento = productos.find((producto) => producto.id == id);
+    console.log(elemento);
+
+    // Uso destructuring para creo las constante con los valores del Objeto
+    const { nombre, precio } = elemento;
+
+    // Creo el objeto producto para insertar en el carrito
+    const producto = {
+      id: id,
+      nombre: nombre,
+      precio: precio,
+      cantidad: 1,
+    };
+
+    carrito.push(producto);
+
+    // Guardo en el localStorage el array carrito en formato JSON
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+  }
+});
+
 // Function para agregar producto al carrito (solo una definición)
 function agregarAlCarrito(id,nombre,precio) {
     let carrito = JSON.parse(localStorage.getItem("carrito")) || [];

@@ -46,6 +46,23 @@ let producto= fetch('./scripts/script.json')
     }
   };
 
+  // Agregar evento de clic a los botones "Agregar al Carrito"
+  const botonesAgregar = document.querySelectorAll('.agregar');
+  botonesAgregar.forEach((boton) => {
+    boton.addEventListener('click', (event) => {
+      const productoId = event.target.getAttribute('data-id');
+      const producto = productos.find(p => p.id == productoId);
+      agregarAlCarrito(producto);
+    });
+  });
+
+const agregarAlCarrito = (producto) => {
+let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+carrito.push(producto);
+localStorage.setItem('carrito', JSON.stringify(carrito));
+alert('Producto agregado al carrito');
+};
+
 // Función para actualizar el contador del carrito
 function actualizarContadorCarrito() {
   const contadorCarrito = document.getElementById("contador-carrito");
