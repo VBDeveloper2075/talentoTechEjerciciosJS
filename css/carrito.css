@@ -18,6 +18,14 @@ table {
     padding: 0.5em;
     border: 1px solid gray;
   }
+
+  .agregar {
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .agregar:active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
   
   @media screen and (min-width: 768px) {
     .listado-productos {
