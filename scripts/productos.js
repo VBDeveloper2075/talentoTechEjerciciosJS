@@ -12,7 +12,7 @@ function actualizarContadorCarrito() {
 actualizarContadorCarrito();
 
 // Gestion de Productos
-const productosContainer = document.getElementById("productos-container");
+const productosContainer = document.getElementById("productosContainer");
 
 // function para cargar los productos desde el archivo json
 async function cargarProductos() {
@@ -29,13 +29,8 @@ async function cargarProductos() {
     }
 }
 
-// Function para mostrar los productos en el html
+// Función para mostrar los productos en el HTML
 function mostrarProductos(productos) {
-    if (productos.length === 0) {
-        productosContainer.innerHTML = "<p>No hay productos disponibles</p>";
-        return;
-    }
-    productosContainer.innerHTML = "";
 
     productos.forEach(producto => {
         productosContainer.innerHTML += `
@@ -62,7 +57,7 @@ document.addEventListener("click", (event) => {
         console.log(elemento);
 
         // Uso destructuring para crear las constantes con los valores del Objeto
-        const { id: productoId, nombre, precio } = elemento;
+        const { productoId, nombre, precio } = elemento;
 
         // Llamo a la función agregarAlCarrito con los parámetros correctos
         agregarAlCarrito(productoId, nombre, precio);
@@ -83,4 +78,4 @@ function agregarAlCarrito(id, nombre, precio) {
     alert(`${nombre} agregado al carrito`);
 }
 
-cargarProductos();
+agregarAlCarrito();
